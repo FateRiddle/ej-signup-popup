@@ -1,0 +1,208 @@
+ul,li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border-style: none;
+  border-radius: 0.5rem;
+  background: #ffc51b;
+  color: white;
+  width: 33vw;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background: orange;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.App {
+  margin: 2vh 5vw;
+  padding-bottom: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+}
+
+.Alert{
+  position: fixed;
+  z-index: 999;
+  top:30vh;
+  left:7vw;
+  height: 30vh;
+  width: 86vw;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #525252;
+}
+
+.Alert header {
+  height: 6vh;
+  line-height: 6vh;
+  padding-left: 5vw;
+  font-size: 1.1rem;
+  color: white;
+  background: #ffc51b;
+  border-radius: 10px 10px 0 0;
+}
+
+.Alert main {
+  height: 16vh;
+  line-height: 16vh;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.Alert button {
+  height: 5vh;
+  width: 34vw;
+  align-self: center;
+  background: #ffc51b;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+}
+
+header {
+  height: 23vh;
+}
+
+header .line {
+  margin: 0 17vw;
+  height: 0.12rem;
+  background: #ffc51b;
+}
+
+header h2 {
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.8rem;
+  color: #525252;
+}
+
+header article {
+  margin-top: 0.8rem;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.App > input {
+  height: 2rem;
+  width: 78vw;
+  margin-bottom: 1rem;
+  border: 0.1rem solid #dddddd;
+  border-radius: 0.5rem;
+  text-indent: 1rem;
+  font-size: 0.9rem;
+  background: #fafafa;
+  color: #525252;
+}
+
+.Selections {
+  display: flex;
+  flex-direction: column;
+  width: 78vw;
+}
+
+.Selections .baos {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+
+}
+
+.baos li {
+  border: 0.1rem solid #ffc51b;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+  color: #9f9f9f;
+}
+
+li.selected {
+  color: white;
+  background: #ffc51b;
+}
+
+.Selections section {
+  /*position: relative;*/
+  margin-top: 3vh;
+  width: 78vw;
+  border: 0.1rem solid #ffc51b;
+  background: white;
+  margin-bottom: 3vh;
+  box-shadow: 0.1rem 0.1rem 0.3rem #9f9f9f;
+}
+
+.Selections .kuans {
+  padding: 3% 2% 2% 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.kuans li {
+  width: 30%;
+  background: #fafafa;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  color: #9f9f9f;
+  padding: 0.2rem;
+}
+
+.kuans li.selected {
+  color: white;
+  background: #ffc51b;
+}
+
+.kuans li span {
+  font-size: 0.2rem;
+}
+
+.bump {
+  position: absolute;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-top: -0.5rem;
+  transform: rotate(45deg);
+  border-top: 0.1rem solid #ffc51b;
+  border-left: 0.1rem solid #ffc51b;
+  background: white;
+}
+
+.bumpLeft {
+  transition: 0.2s left;
+  left: 20%;
+}
+
+.bumpCenter {
+  transition: 0.2s left;
+  left: 48%;
+}
+
+.bumpRight {
+  transition: 0.2s left;
+  left: 76%;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  background: grey;
+  opacity: 0.2;
+}

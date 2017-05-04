@@ -1,0 +1,45 @@
+
+/*common-logo*/
+footer {
+  padding: 20px 10px;
+  background: #4d4948;
+  overflow: hidden; }
+
+.nav-footer {
+  overflow: hidden; }
+  .nav-footer li {
+    font-size: 14px;
+    padding: 0 10px;
+    float: left;
+    line-height: 16px;
+    margin-bottom: 20px;
+    border-right: solid 1px #fff; }
+  .nav-footer:nth-child(4), .nav-footer:nth-child(7) {
+    border: none; }
+  .nav-footer a {
+    color: #fff; }
+  .nav-footer address {
+    width: 90%;
+    padding: 0 5%; }
+
+address ul {
+  float: left;
+  padding-left: 10px; }
+  address ul li {
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff; }
+  address ul li:first-child {
+    background: url("./image/weibo.png") padding-box no-repeat left center/10%;
+    text-indent: 30px; }
+  address ul li:nth-child(2) {
+    background: url("./image/phone.png") no-repeat left center/10%;
+    text-indent: 30px; }
+
+address img {
+  float: right;
+  width: 26%; }
+
+/*common-footer*/
+
+/*# sourceMappingURL=public.css.map */
